@@ -1,0 +1,44 @@
+.Buscador {
+    display: flex;
+    /* padding: 7px; */
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.icono{
+    position: relative;
+    flex-direction: row;
+    width: 80px;
+    height: 80px;
+    left: -40px;
+    top:-30px;
+}
+.contenedorNav{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: -70px;
+    text-decoration: none;
+}
+
+.btnNav{
+    background-color: rgba(240, 248, 255, 0);
+    text-decoration: none;
+    font-family: 'Rubik Bubbles';
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    border: none;
+    list-style: none;
+    position: relative;
+    bottom: 10px;
+}
+
+.link{
+    text-decoration: none;
+}

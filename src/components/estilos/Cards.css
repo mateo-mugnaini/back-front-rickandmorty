@@ -1,0 +1,17 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    border: 8px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    margin: 5px;
+    column-count: 3;
+    max-width: 100%;
+    column-width: 250px;
+    flex-wrap: wrap;
+}
+img{
+    width: 100%;
+}
+
