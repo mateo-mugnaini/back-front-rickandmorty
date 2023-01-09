@@ -25,14 +25,16 @@ export default function Detalle(){
 
 return (
     <div className="contenedorDetalle">
-    <div className="contenedorTextos">
-      <h1>{characters.name}</h1>
-      <h3>{characters.status}</h3>
-      <p>{characters.species}</p>
-      <p>{characters.gender}</p>
-      <p>{characters.origin?.name}</p>
+    <div className="contenedorTextosDetalle">
+      <h1 className="NombreDetalle">Nombre:  {characters.name}</h1>
+      <h3>Estado:  {characters.status}</h3>
+      <p>Especie:  {characters.species}</p>
+      <p>Genero:  {characters.gender}</p>
+      <p>Origen:  {characters.origin?.name}</p>
     </div>
-    <img src={characters.image} alt={characters.name} />
+    <div className="contenedorImgDetalle">
+    <img className="imgDetalle" src={characters.image} alt={characters.name} />
+    </div>
   </div>
 );
 }

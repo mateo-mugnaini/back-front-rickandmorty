@@ -23,15 +23,15 @@ export default function Favoritos(props){
     
     return(
         <div>
-        <div>
-          <select name="order" defaultValue={"DEFAULT"} onChange={handleClick}>
+        <div className="contenedorBtnFiltros">
+          <select className="btmFiltro" name="order" defaultValue={"DEFAULT"} onChange={handleClick}>
             <option value="DEFAULT" disabled>
               Select Order
             </option>
             <option value="Ascendente">Ascendente</option>
             <option value="Descendente">Descendente</option>
           </select>
-          <select name="filter" defaultValue={"DEFAULT"} onChange={handleClick}>
+          <select className="btmFiltro" name="filter" defaultValue={"DEFAULT"} onChange={handleClick}>
             <option value="DEFAULT" disabled>
               Select Filter
             </option>
@@ -41,22 +41,24 @@ export default function Favoritos(props){
             <option value="unknown">unknown</option>
           </select>
           <div>
-            <button onClick={() => dispatch(reset())}>RESET</button>
+            <button className="btmFiltroReset" onClick={() => dispatch(reset())}>RESET</button>
           </div>
         </div>
+        <div className="cards">
         { myFavorites ?.map((c) => {
           return (
             <Card
-              key={c.id}
-              id={c.id}
-              name={c.name}
-              species={c.species}
-              gender={c.gender}
-              image={c.image}
-              onClose={() => props.onClose(c.id)}
+            key={c.id}
+            id={c.id}
+            name={c.name}
+            species={c.species}
+            gender={c.gender}
+            image={c.image}
+            onClose={() => props.onClose(c.id)}
             />
-          );
-        })}
+            );
+          })}
+          </div>
       </div>
   );
 }

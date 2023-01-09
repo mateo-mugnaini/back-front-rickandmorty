@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&family=Rubik+Bubbles&family=Shadows+Into+Light&display=swap');
+
+
+.contenedorDetalle{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contenedorImgDetalle{
+    height: fit-content;
+    width: fit-content;
+}
+
+.imgDetalle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    bottom: 300px;
+    left: 900px;
+    /* margin-bottom: 20%; */
+    border-radius: 50px;
+    border: 10px solid  rgb(40, 121, 58, 0.671);
+}
+
+.contenedorTextosDetalle{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    left: 200px;
+    color: white;
+}
+
+.NombreDetalle{
+    font-family: 'Rubik Bubbles';
+    color: rgb(24, 150, 51);
+    text-shadow: -2px -2px 1px rgb(255, 255, 255),
+                  2px 2px 1px rgb(255, 255, 255),
+                 -2px 2px 1px rgb(255, 255, 255),
+                  2px -2px 1px rgb(255, 255, 255);
+}

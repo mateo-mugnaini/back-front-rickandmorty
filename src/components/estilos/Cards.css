@@ -1,7 +1,7 @@
 .cards{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 15px;
     /* border: 8px solid rgb(0, 0, 0); */
     border-radius: 50px;
