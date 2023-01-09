@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&family=Rubik+Bubbles&family=Shadows+Into+Light&display=swap');
+
+
 .warning {
     border: solid red 1px;
     border-radius: 0.2em;
@@ -8,3 +11,72 @@
     color: red;
     margin-left: 10em;
   }
+
+
+  .contenedorLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(19, 120, 41, 0.452);
+    border: 4px solid rgb(19, 120, 41);
+    border-radius: 30px;
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+  }
+
+.tituloLogIn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0);
+  border-color: rgba(255, 0, 0, 0) ;
+  font-size: 80px;
+  font-family: 'Rubik Bubbles';
+  color:rgb(19, 120, 41);
+  text-shadow: -2px -2px 1px rgb(255, 255, 255),
+                2px 2px 1px rgb(255, 255, 255),
+               -2px 2px 1px rgb(255, 255, 255),
+                2px -2px 1px rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.tags{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.label{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0);
+  border-color: rgba(255, 0, 0, 0) ;
+  font-size: 40px;
+  font-family: 'Rubik Bubbles';
+  color:rgb(19, 120, 41);
+  text-shadow: -2px -2px 1px rgb(255, 255, 255),
+                2px 2px 1px rgb(255, 255, 255),
+               -2px 2px 1px rgb(255, 255, 255),
+                2px -2px 1px rgb(255, 255, 255);
+}
+
+.btnLogIn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0);
+    border-color: rgba(255, 0, 0, 0) ;
+    font-size: 40px;
+    font-family: 'Rubik Bubbles';
+    color:rgb(19, 120, 41);
+    text-shadow: -2px -2px 1px rgb(255, 255, 255),
+                  2px 2px 1px rgb(255, 255, 255),
+                 -2px 2px 1px rgb(255, 255, 255),
+                  2px -2px 1px rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+  }
+

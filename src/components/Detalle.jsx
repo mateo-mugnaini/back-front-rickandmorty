@@ -24,8 +24,8 @@ export default function Detalle(){
       }, [idDetalle]);
 
 return (
-  <div>
-    <div>
+    <div className="contenedorDetalle">
+    <div className="contenedorTextos">
       <h1>{characters.name}</h1>
       <h3>{characters.status}</h3>
       <p>{characters.species}</p>

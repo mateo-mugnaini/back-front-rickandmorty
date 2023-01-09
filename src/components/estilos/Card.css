@@ -7,10 +7,11 @@
     border-radius: 30px;
     width: 22%;
     margin: 10px;
-    height: 425px;
+    height: 450px;
+    background-color: rgba(40, 121, 58, 0.671);
 }
 .BotonX{
-    font-family: 'Roboto';
+    font-family: 'Rubik Bubbles';
     font-weight: bolder;
     font-size: 20px;
     color: rgb(173, 5, 5);
@@ -19,28 +20,47 @@
     top: 2%;
     left: 2%;
     position: absolute;
-    flex-direction: row; 
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-shadow: -2px -2px 1px rgb(255, 255, 255),
+                  2px 2px 1px rgb(255, 255, 255),
+                 -2px 2px 1px rgb(255, 255, 255),
+                  2px -2px 1px rgb(255, 255, 255);
+}
+.btnFavorito{
+    font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 35px;
+    color: rgb(173, 5, 5);
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    /* top: 2%; */
+    left: 80%;
+    position: absolute;
+    flex-direction: row;
     justify-content: center;
     border: none;
     cursor: pointer;
 }
 img{
     /* position: relative; */
-    border-radius: 25px;
-    width: 100%;  
-    top: 0.75%; 
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    top: 0.75%;
 }
-.textoEncima{
+.NombreLink{
     font-family: 'Rubik Bubbles';
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 1;
-    color: rgb(19, 120, 41);
-    border-radius: 30px;
+    color: rgb(22, 110, 41);
     text-shadow: -2px -2px 1px rgb(255, 255, 255), 2px 2px 1px rgb(255, 255, 255), -2px 2px 1px rgb(255, 255, 255), 2px -2px 1px rgb(255, 255, 255);
-    display: relative;
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 1px;
+    text-decoration: none; 
 }
 
 .textoEspecies{

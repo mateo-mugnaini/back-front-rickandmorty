@@ -31,9 +31,9 @@ export default function Card(props) {
       <div className="card">
          <div className='btnFavorito'>
             {Fav ? (
-            <button onClick={() => handleFavorite(props) }>❤️</button>
+            <button className='btnFavorito' onClick={() => handleFavorite(props) }>❤️</button>
             ) : (
-            <button onClick={() => handleFavorite(props) }>♥</button>    
+            <button className='btnFavorito' onClick={() => handleFavorite(props) }>🤍</button>    
             )}
          </div>
          <button className="BotonX" onClick={props.onClose}>X</button>
@@ -41,7 +41,7 @@ export default function Card(props) {
          <img className='Img' src={props.image} alt= {props.image} />
          
          
-         <Link to={`/detalle/${props.id}`}> <h2 className='textoEncima'>{props.name}</h2> </Link> 
+         <Link className='NombreLink' to={`/detalle/${props.id}`}> <h2 className='textoEncima'>{props.name}</h2> </Link> 
          
          <div className='contenedorTextos'>
          

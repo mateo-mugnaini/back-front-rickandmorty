@@ -5,7 +5,7 @@
 h2{
    display: flex;
    
-   color: rgb(0, 0, 0);
+   /* color: rgb(0, 0, 0); */
 }
 .container{
    border: 8px solid rgb(255, 0, 0);

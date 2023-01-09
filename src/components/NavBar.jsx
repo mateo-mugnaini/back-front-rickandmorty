@@ -8,20 +8,20 @@ export default function NavBar(props) {
   return (
     <div className='contenedorNav'>
       <img className='icono' src="/icono.png" alt="" />
-      <div className='btnNav'>
-        <Link to = '/home'> Home </Link>
+      <div className='divBtn'>
+        <Link className='btnNav' to = '/home'> Home </Link>
       </div>
-      <div className='btnNav'>
-        <Link to = '/about'> About </Link>
+      <div className='divBtn'>
+        <Link className='btnNav' to = '/about'> About </Link>
       </div>
-      <div className='btnNav'>
-        <Link to = '/favoritos'> Favoritos </Link>
+      <div className='divBtn'>
+        <Link className='btnNav' to = '/favoritos'> Favoritos </Link>
       </div>
-      <div className='btnNav'>
+      <div className='buscardor'>
         <SearchBar onSearch={props.onSearch} />
       </div>
       <Link className='btnLogOut' to="/">
-        <button onClick={props.logout}> Log Out </button>
+        <button className='btnLogOut' onClick={props.logout}> Log Out </button>
         </Link>
     </div>
   )

@@ -1,44 +1,56 @@
-.Buscador {
-    display: flex;
-    /* padding: 7px; */
-    align-items: center;
-    margin-bottom: 80px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&family=Rubik+Bubbles&family=Shadows+Into+Light&display=swap');
+
 
 .icono{
     position: relative;
     flex-direction: row;
     width: 80px;
     height: 80px;
-    left: -40px;
-    top:-30px;
 }
+
 .contenedorNav{
-    color: rgb(0, 0, 0);
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-bottom: -70px;
-    text-decoration: none;
 }
 
 .btnNav{
-    background-color: rgba(240, 248, 255, 0);
-    text-decoration: none;
     font-family: 'Rubik Bubbles';
-    cursor: pointer;
-    color: aliceblue;
-    font-size: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 100%;
-    border: none;
-    list-style: none;
-    position: relative;
-    bottom: 10px;
+    font-size: 40px;
+    color:rgb(19, 120, 41);
+    text-shadow: -2px -2px 1px rgb(255, 255, 255),
+                  2px 2px 1px rgb(255, 255, 255),
+                 -2px 2px 1px rgb(255, 255, 255),
+                  2px -2px 1px rgb(255, 255, 255);
+    text-decoration: none;
 }
 
-.link{
-    text-decoration: none;
+.btnLogOut{
+    font-family: "Roboto";
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(180, 29, 29);
+    border-radius: 10px;
+    width: 80px;
+    height: 60%;
+    padding: 2px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    bottom: 10px;
+    text-align: center;
+    align-content: center;
+    
+}
+
+.divBtn{
+    display: flex;
+    padding: 10px;
+}
+
+.buscardor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 5px;
 }

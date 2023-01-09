@@ -47,15 +47,18 @@ export default function Login (props) {
   }
 
     return (
-<div>
+<div  className="contenedorLogin">
       <form
         onSubmit={(e) => {
           handleSubmit(e);
         }}
       >
         <div>
-          <div>
-            <label>Username</label>
+
+            <h1 className="tituloLogIn">Rick & Morty</h1>
+
+          <div className="tags">
+            <label className="label">Username</label>
             <input
               className={error.username && 'warning'}
               type="text"
@@ -65,9 +68,9 @@ export default function Login (props) {
             ></input>
             <p>{error.username}</p>
           </div>
-          <div>
-            <label>Password</label>
-            <input
+          <div className="tags">
+            <label className="label">Password</label>
+            <input className="input"
               type="text"
               name="password"
               placerholder="Enter password"
@@ -75,8 +78,8 @@ export default function Login (props) {
             ></input>
             <p>{error.password}</p>
           </div>
-         <Link to = {validateData() ? '/home' : '/' }>
-          <button>LogIn</button>
+         <Link className="btnLogIn" to = {validateData() ? '/home' : '/' }>
+          <button className="btnLogIn">LogIn</button>
           </Link> 
         </div>
       </form>

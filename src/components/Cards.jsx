@@ -5,7 +5,7 @@ import "./estilos/Cards.css"
 export default function Cards(props) {
    const { characters } = props;
    return (
-     <div>
+     <div className='cards'>
        {characters.map((c) => {
          return (
            <Card
