@@ -8,7 +8,7 @@ export default function Detalle(){
     const [characters, setCharacters] = useState({});
 
     useEffect(() => {
-        fetch(`https://rickandmortyapi.com/api/character/${idDetalle}`)
+      fetch(`http://localhost:3001/onsearch/${idDetalle}`)
           .then((response) => response.json())
           .then((char) => {
             if (char.name) {
