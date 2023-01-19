@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, {useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 import './estilos/Detalle.css'
@@ -8,8 +9,8 @@ export default function Detalle(){
     const [characters, setCharacters] = useState({});
 
     useEffect(() => {
-      fetch(`http://localhost:3001/onsearch/${idDetalle}`)
-          .then((response) => response.json())
+      axios.get(`http://localhost:3001/rickandmorty/detail/${idDetalle}`) 
+          .then((response) => response.data)
           .then((char) => {
             if (char.name) {
               setCharacters(char);
