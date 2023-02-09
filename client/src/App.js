@@ -7,7 +7,7 @@ import About from './components/About.jsx';
 import Favoritos from './components/Favorito';
 import Detalle from './components/Detalle';
 import Login from './components/Login';
-// import characters from './data.js';
+
 
 function App () {
 
@@ -40,9 +40,8 @@ function App () {
   const [characters, setCharacters] = useState([]);
 
 
-
   function onSearch(id) {
-    fetch(`https://rickandmortyapi.com/api/character/${id}`)
+    fetch(`http://localhost:3001/onsearch/${id}`)
       .then((response) => response.json())
       .then((data) => {
         if (data.name) {
