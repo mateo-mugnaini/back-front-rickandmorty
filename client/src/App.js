@@ -7,6 +7,7 @@ import About from './components/About.jsx';
 import Favoritos from './components/Favorito';
 import Detalle from './components/Detalle';
 import Login from './components/Login';
+import axios from 'axios'
 
 
 function App () {
@@ -41,8 +42,8 @@ function App () {
 
 
   function onSearch(id) {
-    fetch(`http://localhost:3001/onsearch/${id}`)
-      .then((response) => response.json())
+   axios.get(`http://localhost:3001/rickandmorty/character/${id}`)
+      .then((response) => response.data)
       .then((data) => {
         if (data.name) {
           let exist = characters.find((e) => e.id === data.id);
@@ -56,7 +57,6 @@ function App () {
         }
       });
   }
-
   function onClose(id) {
 
     setCharacters((data) => {
